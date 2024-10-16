@@ -27,13 +27,17 @@
 
     body{
       background-color: hsl(30, 54%, 90%);
-    
+      font-family: 'Outfit', serif;
     }
 
     .recipe-container {
       background-color: hsl(0, 0%, 100%);
       padding: 20px; 
       border-radius: 10px; 
+      max-width: 70%;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .image {
@@ -54,24 +58,43 @@
       color:hsl(14, 45%, 36%);
 
     }
+
     h4 {
       color: hsl(332, 51%, 32%);
+      margin-left: 10px;
+      font-size: 15px;
     }
     .preparation {
       background-color:hsl(330, 100%, 98%) ;
-      padding: 10px;
+      padding:5px;
       border-radius: 5px;
-      font-family: 'Outfit', serif;
-
     }
 
-    .highlight {
-      color: hsl(30, 10%, 34%);
+    .ingredients li::marker {
+      color: hsl(14, 45%, 36%); /* Change the color of the list markers */
+    }
+
+    .preparation li::marker {
+      color: hsl(332, 51%, 32%);
+    }
+
+    .preparation li{
+     margin-bottom: 10px;
+    }
+
+    .ingredients li{
+      margin-bottom: 10px;
     }
 
     .stoneColor {
       color: hsl(30, 10%, 34%);
+      font-size: 12px;
+
     }
+
+    .stoneColor::marker {
+            color: hsl(332, 51%, 32%);
+        }
 
     table {
       width:100%;
@@ -114,16 +137,16 @@
   
     <div class="preparation">
       <h4>Preparation time</h4>
-      <ul>
-        <li class="stoneColor"><span class="highlight"><b>Total:</b></span> Approximately 10 minutes</li>
-        <li><span class="highlight"><b>Preparation:</b></span> 5 minutes</li>
-        <li><span class="highlight"><b>Cooking:</b></span> 5 minutes</li>
+      <ul class="stoneColor">
+        <li><b>Total:</b> Approximately 10 minutes</li>
+        <li><b>Preparation:</b> 5 minutes</li>
+        <li><b>Cooking:</b> 5 minutes</li>
       </ul>
     </div>
   
-    <div>
+    <div class="ingredients">
       <h2>Ingredients</h2>
-      <ul>
+      <ul class="stoneColor">
         <li>2-3 large eggs</li>
         <li>Salt, to taste</li>
         <li>Pepper, to taste</li>
@@ -134,42 +157,42 @@
       <hr>
   
       <h2>Instructions</h2>
-      <ol>
-        <li><span class="highlight">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+      <ol class="stoneColor">
+        <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
           You can add a tablespoon of water or milk for a fluffier texture.</li>
-        <li><span class="highlight">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</li>
-        <li><span class="highlight">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+        <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        <li><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
           the eggs evenly coat the surface.</li>
-        <li><span class="highlight">Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the 
+        <li><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
           middle, sprinkle your chosen fillings over one half of the omelette.</li>
-        <li><span class="highlight">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the 
+        <li><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the 
           fillings. Let it cook for another minute, then slide it onto a plate.</li>
-        <li><span class="highlight">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
+        <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
       </ol>
   
       <hr>
   
       <h2>Nutrition</h2>
-      <p>The table below shows nutritional values per serving without the additional fillings.</p>
+      <p class="stoneColor">The table below shows nutritional values per serving without the additional fillings.</p>
   
       <table>
         <tr>
-          <td>Calories</td>
+          <td class="stoneColor">Calories</td>
           <td class="amount">227</td>
         </tr>
         
         <tr>
-          <td>Carbs</td>
+          <td class="stoneColor">Carbs</td>
           <td class="amount">0g</td>
         </tr>
   
         <tr>
-          <td>Protein</td>
+          <td class="stoneColor">Protein</td>
           <td class="amount">20g</td>
         </tr>
   
         <tr>
-          <td>Fat</td>
+          <td class="stoneColor">Fat</td>
           <td class="amount">22g</td>
         </tr>
       </table> 
