@@ -28,7 +28,6 @@
     body{
       background-color: hsl(30, 54%, 90%);
       font-family: 'Outfit', serif;
-      font-size: 11px;
       height: 100vh;
     }
 
@@ -36,7 +35,7 @@
       background-color: hsl(0, 0%, 100%);
       padding: 20px; 
       border-radius: 10px; 
-      max-width: 600px;
+      max-width: 500px;
       justify-content: center;
       margin-left: auto;
       margin-right: auto;
@@ -62,6 +61,8 @@
       font-family: 'YoungSherif', serif; 
       font-weight: 400; 
       font-size: 24px;
+      margin-left: 5px;
+  
     }
 
     h4 {
@@ -79,20 +80,29 @@
       color: hsl(14, 45%, 36%); /* Change the color of the list markers */
     }
 
-    .instructions {
-      margin-bottom: 10px;
-    }
-
     .preparation li::marker {
       color: hsl(332, 51%, 32%);
     }
 
     .preparation li{
-     margin-bottom: 10px;
+     margin-bottom: 15px;
     }
 
     .ingredients li{
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    ol {
+      list-style-position: outside;
+      margin-left: -15px;
+    }
+
+    ul {
+      margin-left: -15px;
+    }
+
+    li {
+      padding-left: 15px;
     }
 
     .stoneColor {
@@ -118,6 +128,7 @@
       text-align: center;
       width: 100%;
       color: hsl(14, 45%, 36%);
+      font-size: 14px;
     }
 
     tr {
@@ -187,22 +198,22 @@
       <table>
         <tr>
           <td class="stoneColor">Calories</td>
-          <td class="amount">227</td>
+          <td class="amount"><b>227kcal</b></td>
         </tr>
         
         <tr>
           <td class="stoneColor">Carbs</td>
-          <td class="amount">0g</td>
+          <td class="amount"><b>0g</b></td>
         </tr>
   
         <tr>
           <td class="stoneColor">Protein</td>
-          <td class="amount">20g</td>
+          <td class="amount"><b>20g</b></td>
         </tr>
   
         <tr>
           <td class="stoneColor">Fat</td>
-          <td class="amount">22g</td>
+          <td class="amount"><b>22g</b></td>
         </tr>
       </table> 
           
@@ -214,5 +225,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Hedvig</a>.
   </div>
+  <br>
 </body>
 </html>
